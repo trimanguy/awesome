@@ -1,5 +1,6 @@
-define(['jquery', 'backbone', 'marionette', 'underscore', 'handlebars'],
-    function ($, Backbone, Marionette, _, Handlebars) {
+/*global $,Marionette,_*/
+define([],
+    function () {
         var App = new Backbone.Marionette.Application();
 
         //Organize Application into regions corresponding to DOM elements
