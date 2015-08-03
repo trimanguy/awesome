@@ -2,7 +2,7 @@ require.config({
     baseUrl:"./js/app",
     // 3rd party script alias names (Easier to type "jquery" than "libs/jquery, etc")
     // probably a good idea to keep version numbers in the file names for updates checking
-    //TODO: learn more & uncomment; all global for now
+    //TODO: learn more & maybe uncomment; all global for now
     paths:{
         // Core Libraries
         // "jquery":"../libs/jquery",
@@ -20,7 +20,7 @@ require.config({
         "libs": "../libs"
     },
 
-    //TODO: learn more & uncomment; all global for now
+    //TODO: learn more & maybe uncomment; all global for now
     // Sets the configuration for your third party scripts that are not AMD compatible
     shim:{
         // "bootstrap":["jquery"],
@@ -43,7 +43,6 @@ require.config({
     }
 });
 
-// Includes Desktop Specific JavaScript files here (or inside of your Desktop router)
 require([
     "App",
     "routers/AppRouter",

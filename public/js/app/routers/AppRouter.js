@@ -1,13 +1,14 @@
 define([
 	"App",
-	"views/header",
     "views/welcome",
-    ], function(App,HeaderView,WelcomeView) {
+    "views/resume"
+    ], function(App,WelcomeView,ResumeView) {
 
 	return Marionette.AppRouter.extend({
 		//"index" must be a method in AppRouter's controller
 		appRoutes: {
-			"": "index"
+			'': 'index',
+			'resume': 'resume'
 		},
 
 		controller: {
@@ -17,6 +18,9 @@ define([
             //gets mapped to in AppRouter's appRoutes
             'index': function(){
                 App.mainRegion.show(new WelcomeView());
+            },
+            'resume': function(){
+            	App.mainRegion.show(new ResumeView());
             }
         }
 	});

@@ -26,5 +26,17 @@
     "express": "3.x"
   },
   "main": "./server/server",
-  "keywords": ["Marionette.js", "Backbone.js", "Require.js", "Marionette and Require Boilerplate Lite"]
+  "keywords": [
+    "Marionette.js",
+    "Backbone.js",
+    "Require.js",
+    "Marionette and Require Boilerplate Lite"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
